@@ -1,5 +1,5 @@
-#inlude "main.h"
-#include <stdlib>
+#include "main.h"
+#include <stdlib.h>
 /**
 * read_textfile- Read text file print STDOUT
 * @filename: text file been read
@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 char *buf;
 ssize_t fd;
 ssize_t w;
-ssize_t t
+ssize_t t;
 
 fd = open(filename, O_RDONLY);
 if (fd == -1)

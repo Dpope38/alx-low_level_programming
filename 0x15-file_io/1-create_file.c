@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-* create_file - Creates a file and write to the file
+* create_file - Creates a file and writes to the file
 * @filename: A pointer to the name of the file is created
-*@text_content: A pointer to a string to write a file
-Return: if funtion fails return -1, Otherwise retrun (1)
+*@text_content: A pointer to a string to write to the  file
+*Return: if the function fails - -1
+*           Otherwise - 1
 */
 int create_file(const char *filename, char *text_content)
 {
@@ -22,6 +23,6 @@ w = write(fd, text_content, leng);
 
 if (fd == -1 || w == -1)
 return (-1);
-close(fd)
+close(fd);
 return (1);
 }
